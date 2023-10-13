@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager Application</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="column">
+    <h1>Task Manager</h1>
+    <form action="" class="task-manager__form column" id="task-manager__form">
+    <div class="task-manager__container--center">
+        <div class="task-manager__div--container">
+            <div class="task-manager__div--wrapper column">
+            <div class="task-manager__div--cell column" id="activity-id">
+                <label for="activity">Activity:</label>
+                <textarea name="activity" id="activity" cols="20" rows="3"></textarea>
+            </div>
+            <div class="task-manager__div--cell row">
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date">
+            </div>
+            </div>
+        
+            <div class="task-manager__div--wrapper column">
+            <div class="task-manager__div--cell row" id="time-id">
+                <label for="time">Time: </label>
+                <input type="time" name="time" id="time">
+            </div>
+            <div class="task-manager__div--cell row">
+                <label for="importance">Importance:</label>
+                <input type="range" name="range" id="range">
+            </div>
+            </div>
+        
+            </div>
+            <button type="submit">Submit</button>
+    </div>
+
+    </form>
+</main>
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+</html>

@@ -24,10 +24,10 @@ To achieve this project, the following programming language and technology will 
 
 
 ### Image of my wireframe: 
-![wireframe](./assets/my%20portfolio%20wireframe.drawio.png)
+![wireframe](./my%20portfolio%20wireframe.drawio.png)
 
 ### Image of Workflow:
-![workflow](./assets/personal%20portfolio.drawio.png)
+![workflow](./personal%20portfolio.drawio.png)
 ### Demo (Live Demo):
 
 ### ROADMAPS AND FUTURE ENHANCEMENTS:

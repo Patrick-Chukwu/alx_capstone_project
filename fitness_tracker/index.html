@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+
+    <div class="container">
+        <div id="workout-form">
+            <h2>Log Your Workout</h2>
+            <select id="workout-type">
+                <option value="running">Running</option>
+                <option value="cycling">Cycling</option>
+                <option value="weightlifting">Weightlifting</option>
+                <!-- Add more workout types as needed -->
+            </select>
+            <input type="text" id="exercise-name" placeholder="Exercise Name">
+            <input type="number" id="sets" placeholder="Sets">
+            <input type="number" id="reps" placeholder="Reps">
+            <input type="number" id="duration" placeholder="Duration (minutes)">
+            <button id="log-workout-button">Log Workout</button>
+        </div>
+
+        <div id="workout-history">
+            <h2>Workout History</h2>
+            <ul id="workout-list">
+                <!-- Display workout history here -->
+            </ul>
+        </div>
+
+        <div id="fitness-goals">
+            <h2>Fitness Goals</h2>
+            <input type="text" id="goal-description" placeholder="Goal Description">
+            <input type="number" id="target-duration" placeholder="Target Duration (minutes)">
+            <button id="set-goal-button">Set Goal</button>
+        </div>
+
+        <div id="progress-tracker">
+            <h2>Progress Tracker</h2>
+            <p>Total Workout Time: <span id="total-workout-time">0 minutes</span></p>
+            <p>Calories Burned: <span id="calories-burned">0 calories</span></p>
+            <p>Progress Towards Goal: <span id="progress">0%</span></p>
+        </div>
+    </div>
+
+    <footer>
+        <button id="view-statistics-button">View Statistics</button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

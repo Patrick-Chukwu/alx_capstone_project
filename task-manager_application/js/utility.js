@@ -1,5 +1,5 @@
 const activityInput = document.getElementById("activity");
-const dateInput = document.getElementById("date");
+const taskDate = document.getElementById("date").value;
 const timeInput = document.getElementById("time");
 const rangeInput = document.getElementById("range");
 
@@ -41,6 +41,25 @@ const validateForm = (e)  => {
 //     time = "";
 // }
 
+// Function to add a new task
+function addTask() {
+    const taskName = document.getElementById('task-name').value;
+    const dueDate = document.getElementById('due-date').value;
+    const priority = document.getElementById('priority').value;
+    
+    if (taskName !== '') {
+        const task = {
+            name: taskName,
+            dueDate: dueDate,
+            priority: priority,
+            completed: false
+        };
+        tasks.push(task);
+        updateTaskList();
+        saveTasksToLocalStorage();
+        document.getElementById('task-name').value = '';
+    }
+}
 export { validateForm };
 
 // , getActivities, reset

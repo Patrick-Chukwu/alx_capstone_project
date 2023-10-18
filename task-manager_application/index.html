@@ -10,12 +10,16 @@
 <body>
 <main class="column">
     <h1>Task Manager</h1>
-    <form action="" class="task-manager__form column" id="task-manager__form">
+    <form action="" class="task-manager__form column" id="task-form">
     <div class="task-manager__container--center">
         <div class="task-manager__div--container">
             <div class="task-manager__div--wrapper column">
+                <div class="task-manager__div--cell row">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="task-name">
+                </div>
             <div class="task-manager__div--cell column" id="activity-id">
-                <label for="activity">Activity:</label>
+                <label for="activity">Description:</label>
                 <textarea name="activity" id="activity" cols="20" rows="3"></textarea>
             </div>
             <div class="task-manager__div--cell row">
@@ -30,8 +34,12 @@
                 <input type="time" name="time" id="time">
             </div>
             <div class="task-manager__div--cell row">
-                <label for="importance">Importance:</label>
-                <input type="range" name="range" id="range">
+                <label for="importance">priority:</label>
+                <select name="priority" id="priority">
+                    <option value="High">High</option>
+                    <option value="medium" selected>medium</option>
+                    <option value="low" >low</option>
+                </select>
             </div>
             </div>
         

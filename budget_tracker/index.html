@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Budget Tracker</h1>
+    </header>
+    <main>
+
+    <div class="container">
+        <div id="income-expense-forms">
+            <h2>Income and Expenses</h2>
+            <form id="income-form">
+                <input type="text" id="income-description" placeholder="Income description">
+                <input type="number" id="income-amount" placeholder="Amount">
+                <button id="add-income">Add Income</button>
+            </form>
+            <form id="expense-form">
+                <input type="text" id="expense-description" placeholder="Expense description">
+                <input type="number" id="expense-amount" placeholder="Amount">
+                <button id="add-expense">Add Expense</button>
+            </form>
+        </div>
+
+        <div id="budget-summary">
+            <h2>Budget Summary</h2>
+            <p>Total Income: $<span id="total-income">0</span></p>
+            <p>Total Expenses: $<span id="total-expenses">0</span></p>
+            <p>Available Balance: $<span id="available-balance">0</span></p>
+        </div>
+
+        <div id="budget-chart">
+            <!-- Chart or graph representation can go here -->
+        </div>
+    </div>
+
+    </main>
+    <footer>
+        <button id="export-button">Export Data</button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
